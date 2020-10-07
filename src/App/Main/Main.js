@@ -102,7 +102,8 @@ class Main extends Component {
 
                             <Route path='/likedArticles' render={() => (
                                 <LikedArticles  articleData={this.props.articleData}
-                                                likeArticleState={this.state.likeArticleState}/>
+                                                likeArticleState={this.state.likeArticleState}
+                                                changeLike={this.changeLike}/>
                             )}/>
                                                 
 
@@ -131,7 +132,9 @@ class Main extends Component {
                                         photo={photo}
                                         smallText={smallText}
                                         fullText={fullText}
-                                        likesCount={likesCount}/>
+                                        likesCount={likesCount}
+                                        isLiked={this.state.likeArticleState[id]}
+                                        changeLike={this.changeLike}/>
                                 )}/>)                         
                             )}
                         </div>

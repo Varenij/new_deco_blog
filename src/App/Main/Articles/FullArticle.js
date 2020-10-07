@@ -14,6 +14,8 @@ const FullArticle = ({
     photo,
     fullText,
     likesCount,
+    isLiked,
+    changeLike,
 }) => {
     return (
         <div className="fullArticle">
@@ -45,7 +47,9 @@ const FullArticle = ({
             <div className="comment-like-social">
                 <div className="comment-like">
                     <h2><i className="far fa-comments"></i> COMMENT</h2>
-                    <h2><i className="far fa-heart"></i> LIKE {likesCount}</h2>       
+                    <button onClick={() => changeLike(id)}>
+                        {isLiked ? <i className="fas fa-heart"></i> : <i className="far fa-heart"></i>} <span>LIKE {isLiked ? likesCount + 1 : likesCount}</span>
+                    </button>       
                 </div>  
                 <AveragePage/>
                 <SocialNetPage/>
