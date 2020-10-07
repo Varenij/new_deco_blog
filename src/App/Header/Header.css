@@ -1,0 +1,104 @@
+.header {
+    background-color: #212429;
+    height: 345px;
+    color: white;
+}
+
+.headerContainer {
+    padding: 20px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo {
+    justify-self: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 23px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo img {
+    display: inline;
+}
+
+.socialNet {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(5, 55px)
+
+}
+
+.icon {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-left: solid 1px #3c3c3c;
+    transition: all 500ms;
+}
+
+.icon:hover {
+    transition: all 500ms;
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: white;
+    color: #212429;
+    box-shadow: white 0 0 15px;
+}
+
+.socialNet:last-child {
+    border-right: solid 1px #3c3c3c;
+}
+
+.navBar ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.list li {
+    height: 30px;
+    width: 100%;
+    border-left: solid 1px #3c3c3c;
+    display: block;
+    transition: all 500ms;
+    margin: 0 auto;
+}
+
+.list li:last-child {
+    border-right: solid 1px #3c3c3c;
+}
+
+.list a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.list span {
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+.list li:hover {
+    transition: all 500ms;
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.list li:hover a {
+    color: #212429;
+}
+
+.list li:hover span {
+    color: #212429;
+}
