@@ -4,8 +4,8 @@ import SmallArticle from './SmallArticle';
 
 const LikedArticles = (props) => {
     return (
-        <div className='liked-articles'>
-            <h1>LIKED ARTICLES</h1>
+        <div>
+            <h1 className='liked-articles'>LIKED ARTICLES</h1>
             {props.articleData.map((
                 {id,
                 image,
